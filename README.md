@@ -4,7 +4,7 @@ University of Calgary, Department of Electrical and Software Engineering, Calgar
 
 Justin Pham - UCID: 30139323
 
-Angelo Troncone - UCID: 
+Angelo Troncone - UCID: 30142880
 
 ENSF 338 Assignment 2 L02
 
