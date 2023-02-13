@@ -34,7 +34,7 @@ counts = []
 timings = []
 
 
-for i in range(3):
+for i in range(len(data)):
     start = perf_counter()
     func1(data[i], 0, len(data[i]) - 1)
     end = perf_counter()
@@ -45,6 +45,6 @@ for i in range(3):
 plt.plot(counts, timings)
 plt.title("Quick Sort")
 plt.xlabel("Arrays")
-plt.xticks(range(0,3))
+# plt.xticks(range(0,3))
 plt.ylabel("Time (s)")
 plt.show()
