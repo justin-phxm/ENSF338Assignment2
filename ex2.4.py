@@ -5,10 +5,10 @@ from time import perf_counter
 sys.setrecursionlimit(20000)
 
 def func1(arr, low, high):
- while low < high:
-     pi = func2(arr, low, high)
-     func1(arr, low, pi-1)
-     low = pi + 1
+    while low < high:
+        pi = func2(arr, low, high)
+        func1(arr, low, pi-1)
+        low = pi + 1
 
 
 def func2(array, start, end):
@@ -41,8 +41,10 @@ for i in data:
     counts.append(count)
     count += 1
     timings.append(end - start)
-    print(end - start)
-
 
 plt.plot(counts, timings)
+plt.title("Quick Sort")
+plt.xlabel("Arrays")
+plt.xticks(range(0,len(data)))
+plt.ylabel("Time (s)")
 plt.show()
